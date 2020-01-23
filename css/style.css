@@ -60,6 +60,7 @@ i:hover, li:hover  {
 .profilo {
   height: 60px;
   background-color: #EDEDED;
+  justify-content: space-between;
 }
 .notifiche {
   height: 70px;
@@ -97,7 +98,7 @@ i:hover, li:hover  {
   border-radius: 50px;
 }
 .icon-profilo  {
-  margin-left: 160px;
+ margin-right: 10px;
 }
 .icon-profilo i {
   margin: 3px;
@@ -116,22 +117,33 @@ i:hover, li:hover  {
   height: 60px;
   background-color: #EDEDED;
 }
+.header-accesso {
+  justify-content: space-between;
+}
+.nome-utente {
+  margin-left: 50px;
+  width: 150px;
+  line-height: 21px;
+}
 .icon-accesso  {
-  margin-left: 430px;
-  align-items: center;
+  margin-right: 10px;
 }
 .icon-accesso i {
   margin: 3px;
   font-size: 20px;
   color: #888D90;
+  display: inline-block;
 }
+/* footer */
 .footer {
-  /* position: fixed; */
+ /* position: fixed; */
+
 }
 .box-invio {
   background-color: #F0F0F0;
   height: 80px;
   justify-content: space-around;
+
 }
 .sfondo {
   height: calc(700px - 140px);
@@ -168,4 +180,11 @@ i:hover, li:hover  {
   padding: 10px;
   border-radius: 30px;
   margin-top: 20px;
+}
+.pc {
+  background-color: #FFF;
+  float: left;
+  padding: 10px;
+  border-radius: 30px;
+
 }
