@@ -21,6 +21,9 @@ body {
 p {
   font-family:  serif;
 }
+i:hover, li:hover  {
+  cursor: pointer;
+}
 /* SCHELETRO STRUTTURA */
 .header {
   width: 100%;
@@ -96,6 +99,9 @@ p {
   margin: 3px;
   font-size: 20px;
   color: #888D90;
+}
+.attiva-notifiche {
+  font-size: 12px;
 }
 .ora {
   transform: translate(85px, -15px);
