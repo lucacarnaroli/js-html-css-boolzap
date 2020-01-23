@@ -3,19 +3,58 @@
   padding: 0;
   margin: 0;
 }
-
+body {
+  display: flex;
+  justify-content: center;
+}
 .header {
   width: 100%;
   height: 100px;
   background-color: red;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
+  z-index: 0 ;
+  position: absolute;
 }
 .wrapper {
   width: 70%;
   height: 600px;
-  z-index: 3;
   background-color: pink;
+  z-index: 1;
+  position: relative;
   margin-top: 50px;
+}
+.section {
+  display: flex;
+  flex-direction: row;
+}
+.contatti {
+  height: 600px;
+  background-color: blue;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.chat {
+  height: 600px;
+  width: 70%;
+  background-color: grey;
+}
+.profilo {
+  height: 60px;
+  background-color: green;
+}
+.notifiche {
+  height: 70px;
+  background-color: red;
+}
+.lista-contatti {
+  height: 400px;
+  background-color: yellow;
+}
+.lista-contatti li {
+  list-style: none;
+  border: 1px solid black;
+  height: calc(400px / 6);
+}
+.search-contatti {
+  height: 30px;
 }
