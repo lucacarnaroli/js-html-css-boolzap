@@ -7,6 +7,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: #D7DBD6;
+  font-family: sans-serif;
 }
 .flex-row {
   display: flex;
@@ -16,6 +17,9 @@ body {
 .flex-column {
   display: flex;
   flex-direction: column;
+}
+p {
+  font-family:  serif;
 }
 /* SCHELETRO STRUTTURA */
 .header {
@@ -28,7 +32,6 @@ body {
 .wrapper {
   width: 70%;
   height: 700px;
-  background-color: pink;
   z-index: 1;
   position: relative;
   margin-top: 50px;
@@ -92,6 +95,7 @@ body {
 .icon-profilo i {
   margin: 3px;
   font-size: 20px;
+  color: #888D90;
 }
 .ora {
   transform: translate(85px, -15px);
@@ -109,6 +113,7 @@ body {
 .icon-accesso i {
   margin: 3px;
   font-size: 20px;
+  color: #888D90;
 }
 .box-invio {
   background-color: #F0F0F0;
@@ -130,8 +135,10 @@ body {
 .submit {
   font-size: 30px;
   margin-right: 12px;
+  color: rgb(123, 124, 124);
 }
 .smile {
   font-size: 30px;
   margin-left: 12px;
+  color: rgb(123, 124, 124);
 }
