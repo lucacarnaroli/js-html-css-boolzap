@@ -50,7 +50,11 @@ i:hover, li:hover  {
 }
 .chat {
   width: 70%;
-  background-color: grey;
+  height: 700px;
+  background-image: url(../img/whatsapp-default-wallpaper.png);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
   overflow-y: scroll;
 }
 .profilo {
@@ -122,19 +126,17 @@ i:hover, li:hover  {
   color: #888D90;
 }
 .footer {
-  position: fixed;
+  /* position: fixed; */
 }
 .box-invio {
   background-color: #F0F0F0;
   height: 80px;
   justify-content: space-around;
-  width: 690px;
-  position:fixed;
 }
 .sfondo {
   height: calc(700px - 140px);
   background-image: url(../img/whatsapp-default-wallpaper.png);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center;
   background-size: cover;
 }
@@ -142,11 +144,16 @@ i:hover, li:hover  {
   height: 50px;
   width: 80%;
   font-size: 15px;
+  border-radius: 30px;
+  padding: 10px;
 }
 .submit {
   font-size: 30px;
   margin-right: 12px;
   color: rgb(123, 124, 124);
+}
+.submit:hover {
+  color: rgb(167, 167, 167);
 }
 .smile {
   font-size: 30px;
@@ -154,8 +161,11 @@ i:hover, li:hover  {
   color: rgb(123, 124, 124);
 }
 /* /DETTAGLI STRUTTURA */
+/* CLASSI jquery */
 .msg-green {
   background-color: #DCF8C7;
   float: right;
-  width: 40px;
+  padding: 10px;
+  border-radius: 30px;
+  margin-top: 20px;
 }
