@@ -45,6 +45,7 @@ body {
   height: 680px;
   width: 70%;
   background-color: grey;
+  overflow-y: scroll;
 }
 .profilo {
   height: 60px;
@@ -76,10 +77,37 @@ body {
 }
 /* /SCHELETRO STRUTTURA  */
 /* DETTAGLI STRUTTURA */
+/* contatti */
 .foto-profilo {
   height: 40px;
   width: 40px;
   background-color: purple;
   margin: 10px;
   border-radius: 50px;
+}
+.ora {
+  transform: translate(85px, -15px);
+}
+/* /contatti */
+/* chat */
+.accesso {
+  height: 60px;
+  background-color: yellow;
+}
+.box-invio{
+  background-color: green;
+  height: 80px;
+  justify-content: center;
+}
+.sfondo {
+  height: calc(680px - 140px);
+  background-image: url(../img/whatsapp-default-wallpaper.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.testo-messaggio {
+  height: 50px;
+  width: 70%;
+  font-size: 15px;
 }
