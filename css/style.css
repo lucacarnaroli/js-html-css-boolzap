@@ -7,6 +7,15 @@ body {
   display: flex;
   justify-content: center;
 }
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
 /* SCHELETRO STRUTTURA */
 .header {
   width: 100%;
@@ -17,7 +26,7 @@ body {
 }
 .wrapper {
   width: 70%;
-  height: 600px;
+  height: 680px;
   background-color: pink;
   z-index: 1;
   position: relative;
@@ -28,44 +37,36 @@ body {
   flex-direction: row;
 }
 .contatti {
-  height: 600px;
+  height: 680px;
   background-color: blue;
   width: 30%;
-  display: flex;
-  flex-direction: column;
 }
 .chat {
-  height: 600px;
+  height: 680px;
   width: 70%;
   background-color: grey;
 }
 .profilo {
   height: 60px;
   background-color: green;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 .notifiche {
   height: 70px;
   background-color: red;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 .search-contatti {
-  margin: 10px;
+  margin: 8px;
   border-radius: 3px;
 }
 .lista-contatti {
-  height: 400px;
+  height: 480px;
   background-color: yellow;
   margin-right: 10px;
 }
 .lista-contatti li {
   list-style: none;
   border: 1px solid black;
-  height: calc(400px / 6);
+  height: calc(480px / 8);
   display: flex;
   flex-direction: row;
   align-items: center;
