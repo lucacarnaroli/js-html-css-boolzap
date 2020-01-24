@@ -198,6 +198,7 @@ i:hover, li:hover  {
   margin: 10px;
   float: right;
   clear: both;
+  display: block;
 }
 .msg-send {
   justify-content: space-between;

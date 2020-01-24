@@ -2,8 +2,9 @@ $(document).ready(
   function () {
     $('.submit').click(
       function (){
-        var message = $('.send').clone();
-        $('.sfondo').append(message);
+        sendMessage()
+        // var message = $('.send').clone();
+        // $('.sfondo').append(message);
 
         // setTimeout(gian,2000);
         // function (){
@@ -12,7 +13,7 @@ $(document).ready(
         //   $(messaggioPc).clone();
         //   $('.sfondo').append(messaggioPc);
 
-        }
+        // }
       }
     );
 
@@ -26,3 +27,17 @@ $(document).ready(
    );
   }
 );
+
+
+function sendMessage(){
+  var textMessage = $('input.testo-messaggio').val();
+  console.log(textMessage);
+  if (textMessage.length != 0) {
+    var newMessage = $('.send').clone();
+
+    newMessage.find('.message-text').append(textMessage);
+
+
+  }
+
+}
