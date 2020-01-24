@@ -8,6 +8,9 @@ body {
   justify-content: center;
   background-color: #D7DBD6;
   font-family: sans-serif;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
 }
 .flex-row {
   display: flex;
@@ -17,9 +20,6 @@ body {
 .flex-column {
   display: flex;
   flex-direction: column;
-}
-p {
-  font-family:  serif;
 }
 i:hover, li:hover  {
   cursor: pointer;
@@ -33,13 +33,14 @@ i:hover, li:hover  {
   position: absolute;
 }
 .wrapper {
+
+}
+.section-main {
   width: 70%;
-  height: 700px;
+  height: 90%;
   z-index: 1;
   position: relative;
   margin-top: 50px;
-}
-.section-main {
   display: flex;
   flex-direction: row;
 }
@@ -74,6 +75,7 @@ i:hover, li:hover  {
   height: 500px;
   background-color: #FFF;
   margin-right: 10px;
+  overflow-y: scroll;
 }
 .lista-contatti li {
   list-style: none;
@@ -143,14 +145,14 @@ i:hover, li:hover  {
   background-color: #F0F0F0;
   height: 80px;
   justify-content: space-around;
-
 }
 .sfondo {
   height: calc(700px - 140px);
   background-image: url(../img/whatsapp-default-wallpaper.png);
   background-repeat: repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  padding: 10px;
 }
 .testo-messaggio {
   height: 50px;
@@ -186,5 +188,40 @@ i:hover, li:hover  {
   float: left;
   padding: 10px;
   border-radius: 30px;
-
+}
+.send {
+  min-width: 30%;
+  max-width: 70%;
+  background-color: green;
+  padding: 10px;
+  border-radius: 30px;
+  float: right;
+}
+.msg-send p {
+  width: 100px;
+}
+.msg-send i {
+  font-size: 12px;
+}
+.ora-invio {
+  float: right;
+  font-size: 12px;
+}
+.received {
+  min-width: 30%;
+  max-width: 70%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 30px;
+  float: left;
+}
+.msg-received p {
+  width: 100px;
+}
+.msg-received i {
+  font-size: 12px;
+}
+.ora-invio {
+  float: right;
+  font-size: 12px;
 }
