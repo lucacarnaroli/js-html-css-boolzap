@@ -1,16 +1,16 @@
 $(document).ready(
   function () {
     $('.submit').click(
-      function gian(message){
-        var message = $('.testo-messaggio').clone().addClass('msg-green');
+      function (){
+        var message = $('.send').clone();
         $('.sfondo').append(message);
 
-        setTimeout(gian,2000);
-        function gian(){
-          var messaggioPc = 'ciao';
-          console.log(messaggioPc);
-          $(messaggioPc).clone();
-          $('.sfondo').append(messaggioPc);
+        // setTimeout(gian,2000);
+        // function (){
+        //   var messaggioPc = 'ciao';
+        //   console.log(messaggioPc);
+        //   $(messaggioPc).clone();
+        //   $('.sfondo').append(messaggioPc);
 
         }
       }

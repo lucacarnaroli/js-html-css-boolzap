@@ -56,7 +56,6 @@ i:hover, li:hover  {
   background-repeat: repeat;
   background-position: center;
   background-size: cover;
-  overflow-y: scroll;
 }
 .profilo {
   height: 60px;
@@ -151,8 +150,9 @@ i:hover, li:hover  {
   background-image: url(../img/whatsapp-default-wallpaper.png);
   background-repeat: repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   padding: 10px;
+  overflow-y: scroll;
 }
 .testo-messaggio {
   height: 50px;
@@ -190,38 +190,40 @@ i:hover, li:hover  {
   border-radius: 30px;
 }
 .send {
-  min-width: 30%;
-  max-width: 70%;
+  min-width: 20%;
+  max-width: 40%;
   background-color: green;
   padding: 10px;
-  border-radius: 30px;
+  border-radius: 5px;
+  margin: 10px;
   float: right;
+  clear: both;
 }
-.msg-send p {
-  width: 100px;
+.msg-send {
+  justify-content: space-between;
 }
 .msg-send i {
   font-size: 12px;
-}
-.ora-invio {
-  float: right;
-  font-size: 12px;
+  padding: 5px;
 }
 .received {
-  min-width: 30%;
-  max-width: 70%;
-  background-color: #fff;
+  min-width: 20%;
+  max-width: 40%;
+  background-color: white;
   padding: 10px;
-  border-radius: 30px;
+  border-radius: 5px;
+  margin: 10px;
   float: left;
+  clear: both;
 }
-.msg-received p {
-  width: 100px;
+.msg-received {
+  justify-content: space-between;
 }
 .msg-received i {
   font-size: 12px;
+  padding: 5px;
 }
 .ora-invio {
-  float: right;
+  text-align: right;
   font-size: 12px;
 }
