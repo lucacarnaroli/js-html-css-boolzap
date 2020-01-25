@@ -32,9 +32,9 @@ i:hover, li:hover  {
   z-index: 0 ;
   position: absolute;
 }
-.wrapper {
+/* .wrapper {
 
-}
+} */
 .section-main {
   width: 70%;
   height: 90%;
@@ -45,13 +45,13 @@ i:hover, li:hover  {
   flex-direction: row;
 }
 .contatti {
-  height: 700px;
+  height: 100%;
   background-color: #F8F8F8;
   width: 30%;
 }
 .chat {
   width: 70%;
-  height: 700px;
+  height: 100%;
   background-image: url(../img/whatsapp-default-wallpaper.png);
   background-repeat: repeat;
   background-position: center;
@@ -74,16 +74,15 @@ i:hover, li:hover  {
   height: 500px;
   background-color: #FFF;
   margin-right: 10px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .lista-contatti li {
   list-style: none;
-  border-top: 1px solid #D7DBD6;
   border-bottom : 1px solid #D7DBD6;
-  height: calc(500px / 8);
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 100%;
 }
 .search-contatti {
   height: 30px;
@@ -109,9 +108,13 @@ i:hover, li:hover  {
 .attiva-notifiche {
   font-size: 12px;
 }
-.ora {
-  transform: translate(85px, -15px);
+.box {
+  width: 90%;
 }
+.nome-ora {
+  justify-content: space-between;
+}
+
 /* /contatti */
 /* chat */
 .accesso {
@@ -136,17 +139,14 @@ i:hover, li:hover  {
   display: inline-block;
 }
 /* footer */
-.footer {
- /* position: fixed; */
 
-}
 .box-invio {
   background-color: #F0F0F0;
   height: 80px;
   justify-content: space-around;
 }
 .sfondo {
-  height: calc(700px - 140px);
+  height: calc(100% - 140px);
   background-image: url(../img/whatsapp-default-wallpaper.png);
   background-repeat: repeat;
   background-position: center;
@@ -189,6 +189,11 @@ i:hover, li:hover  {
   padding: 10px;
   border-radius: 30px;
 }
+.message {
+  overflow: hidden;
+  word-break: break-all;
+  word-wrap: break-word;
+}
 .send {
   min-width: 20%;
   max-width: 40%;
@@ -227,4 +232,7 @@ i:hover, li:hover  {
 .ora-invio {
   text-align: right;
   font-size: 12px;
+}
+.template {
+  display: none;
 }
