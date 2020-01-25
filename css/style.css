@@ -109,7 +109,8 @@ i:hover, li:hover  {
   font-size: 12px;
 }
 .box {
-  width: 90%;
+  width: 80%;
+  margin-right: 10px;
 }
 .nome-ora {
   justify-content: space-between;
@@ -235,4 +236,14 @@ i:hover, li:hover  {
 }
 .template {
   display: none;
+}
+.template-received {
+  display:none;
+}
+.option i{
+  display: none;
+}
+.option i:hover {
+  display: block;
+  color: red;
 }
