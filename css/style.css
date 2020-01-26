@@ -247,3 +247,24 @@ i:hover, li:hover  {
   display: block;
   color: red;
 }
+.box-search {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.wrap-search {
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 30px;
+}
+.wrap-search input {
+  border: 0;
+  width: 150px;
+  height: 20px;
+}
+.box-icon-search {
+  padding: 10px;
+}
