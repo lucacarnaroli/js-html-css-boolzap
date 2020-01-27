@@ -3,11 +3,31 @@ $(document).ready(
     $('.submit').click(
       function (){
         sendMessage()
-        setTimeout(received,1000);
-        clearTimeout();
       }
     );
-  }
+    $('.testo-messaggio').keypress(function(){
+      if (event.which == 13) {
+        sendMessage()
+       }
+     }
+    );
+    // 2metodo 2milestone 
+    $('.search-contatti').keyup(function () {
+      var testoInserito = $('.search-contatti ').val().toLowerCase();
+      $('li').each(function(){
+        var nome = $(this).find('.nome').text().toLowerCase();
+        if (nome.includes(testoInserito)==true) {
+          $(this).show();
+        }
+        else {
+          $(this).hide();
+        }
+       }
+      )
+
+    }
+   )
+ }
 );
 
 
@@ -24,6 +44,8 @@ function sendMessage(){
 
     $('.sfondo').append(newMessage);
     $('.testo-messaggio').val('');
+    setTimeout(received,1000);
+    scroll();
   }
 }
 function addZero(number){
@@ -36,44 +58,42 @@ function addZero(number){
 function received() {
   var newMessage = $('.template-received > .message-received').clone().addClass('received');
   newMessage.find('.message-text-received');
+
   $('.sfondo').append(newMessage);
   var data = new  Date();
-  var hours = data.getHours();
-  var minutes = data.getMinutes();
+  var hours = addZero(data.getHours());
+  var minutes = addZero(data.getMinutes());
   var time = hours + ':' + minutes;
   newMessage.find('.ora-invio').text(time);
+  scroll();
 }
+// 2 metodo milestone2
 // scrivendo qualcosa nell’input a sinistra, vengono visualizzati solo i contatti il cui nome contiene le lettere inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono solo Marco e Martina)
-$(document).ready(
-  function(){
-    $('.icon-search').click(
-      function search(){
-        var textSearch = $('.search-contatti').val('');
-
-        var nomeUtente = $('.nome');
-
-
-          var i = 0;
-          while (i < nomeUtente.length) {
-           if (nomeUtente == textSearch[i]) {
-             nomeUtente.hide();
-           }
-           i++;
-          }
-
-
-      }
-    )
-
-  }
-);
-
-
-
-
-// $('.search-contatti').keydown(function(){ console.log(event.which);
-//   if (event.which == 13) {
+// $(document).ready(
+//   function(){
+//     $('.icon-search').click(
+//       function search(){
+//         var textSearch = $('.search-contatti').val();
 //
-//    }
-//  }
+//           var i = 0;
+//           while (i < $('.nome').length) {
+//            var nomeUtente = $('.lista-contatti .nome ').eq(i).text();
+//
+//            var trovato = $('.lista-contatti li').eq(i);
+//            if (nomeUtente.includes(textSearch)) {
+//              trovato.show();
+//              console.log('il nome esiste');
+//            } else {
+//              trovato.hide();
+//              console.log('il nome non esiste');
+//            }
+//            i++;
+//            console.log(nomeUtente);
+//           }
+//
+//
+//       }
+//     )
+//
+//   }
 // );

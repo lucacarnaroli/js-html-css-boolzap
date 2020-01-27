@@ -240,13 +240,13 @@ i:hover, li:hover  {
 .template-received {
   display:none;
 }
-.option i{
-  display: none;
+/* .option i{
+  display: ;
 }
 .option i:hover {
   display: block;
   color: red;
-}
+} */
 .box-search {
   width: 100%;
   height: 50px;
