@@ -5,6 +5,7 @@ $(document).ready(
         sendMessage()
       }
     );
+
     $('.testo-messaggio').keypress(function(){
       if (event.which == 13) {
         sendMessage()
@@ -42,7 +43,7 @@ function sendMessage(){
     var time = hours + ':' + minutes;
     newMessage.find('.ora-invio').text(time);
 
-    $('.sfondo').append(newMessage);
+    $('.message-sfondo.active').append(newMessage);
     $('.testo-messaggio').val('');
     setTimeout(received,1000);
 
@@ -59,14 +60,25 @@ function received() {
   var newMessage = $('.template-received > .message-received').clone().addClass('received');
   newMessage.find('.message-text-received');
 
-  $('.sfondo').append(newMessage);
+  $('.message-sfondo.active').append(newMessage);
   var data = new  Date();
   var hours = addZero(data.getHours());
   var minutes = addZero(data.getMinutes());
   var time = hours + ':' + minutes;
   newMessage.find('.ora-invio').text(time);
-  
 }
+
+$('.contatto').click(
+  function() {
+    var nomeContatto = $(this).find(".nome").text();
+    $('.header-accesso h4').text(nomeContatto);
+    var assegnazione = $(this).attr('data-contact');
+    var conversazione = $('.message-sfondo[data-contact="' + assegnazione + '"]');
+    $('.message-sfondo').removeClass('active');
+    conversazione.addClass('active');
+  }
+);
+
 // 2 metodo milestone2
 // scrivendo qualcosa nell’input a sinistra, vengono visualizzati solo i contatti il cui nome contiene le lettere inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono solo Marco e Martina)
 // $(document).ready(

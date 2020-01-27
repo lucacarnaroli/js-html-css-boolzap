@@ -40,7 +40,7 @@
             </div>
           </div>
           <ul class="lista-contatti">
-            <li>
+            <li class='contatto' data-contact='0'>
               <div class="foto-profilo"></div>
               <div class="box flex-column">
                 <div class="nome-ora flex-row">
@@ -52,7 +52,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class='contatto' data-contact='1'>
               <div class="foto-profilo"></div>
               <div class="box flex-column">
                 <div class="nome-ora flex-row">
@@ -64,7 +64,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class='contatto'data-contact='2'>
               <div class="foto-profilo"></div>
               <div class="box flex-column">
                 <div class="nome-ora flex-row">
@@ -76,7 +76,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class='contatto'data-contact='3'>
               <div class="foto-profilo"></div>
               <div class="box flex-column">
                 <div class="nome-ora flex-row">
@@ -88,7 +88,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class='contatto'data-contact='4'>
               <div class="foto-profilo"></div>
               <div class="box flex-column">
                 <div class="nome-ora flex-row">
@@ -100,7 +100,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class='contatto'data-contact='5'>
               <div class="foto-profilo"></div>
               <div class="box flex-column">
                 <div class="nome-ora flex-row">
@@ -112,7 +112,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class='contatto'data-contact='6'>
               <div class="foto-profilo"></div>
               <div class="box flex-column">
                 <div class="nome-ora flex-row">
@@ -124,7 +124,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class='contatto'data-contact='7'>
               <div class="foto-profilo"></div>
               <div class="box flex-column">
                 <div class="nome-ora flex-row">
@@ -136,7 +136,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class='contatto'data-contact='8'>
               <div class="foto-profilo"></div>
               <div class="box flex-column">
                 <div class="nome-ora flex-row">
@@ -148,7 +148,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class='contatto'data-contact='9'>
               <div class="foto-profilo"></div>
               <div class="box flex-column">
                 <div class="nome-ora flex-row">
@@ -181,6 +181,7 @@
           </div>
           <div class="sfondo">
             <!-- messaggio inviato -->
+            <div class="message-sfondo">
             <div class="send">
               <div class="msg-send flex-row">
                <p>Ciao</p>
@@ -202,6 +203,235 @@
               <p class="ora-invio">13:00</p>
             </div>
           </div>
+<!-- CHAT UTENTI -------------------------------------->
+      <section class="chat-utenti">
+
+        <div class="message-sfondo active" data-contact='0'>
+          <div class="send">
+            <div class="msg-send flex-row">
+             <p>come stai</p>
+             <span class="option">
+               <i class="fas fa-chevron-down"></i>
+             </span>
+            </div>
+            <p class="ora-invio">13:00</p>
+          </div>
+
+          <!-- messaggio ricevuto -->
+          <div class="received">
+            <div class="msg-received flex-row">
+             <p>bene</p>
+             <span class="option">
+               <i class="fas fa-chevron-down"></i>
+             </span>
+            </div>
+            <p class="ora-invio">13:00</p>
+          </div>
+        </div>
+        <div class="message-sfondo "data-contact='1'>
+          <div class="send">
+            <div class="msg-send flex-row">
+             <p>hai fatto la spesa</p>
+             <span class="option">
+               <i class="fas fa-chevron-down"></i>
+             </span>
+            </div>
+            <p class="ora-invio">13:00</p>
+          </div>
+
+          <!-- messaggio ricevuto -->
+          <div class="received">
+            <div class="msg-received flex-row">
+             <p>si</p>
+             <span class="option">
+               <i class="fas fa-chevron-down"></i>
+             </span>
+            </div>
+            <p class="ora-invio">13:00</p>
+          </div>
+        </div>
+        <div class="message-sfondo" data-contact='2'>
+          <div class="send">
+            <div class="msg-send flex-row">
+             <p>hai l'influenza</p>
+             <span class="option">
+               <i class="fas fa-chevron-down"></i>
+             </span>
+            </div>
+            <p class="ora-invio">13:00</p>
+          </div>
+
+          <!-- messaggio ricevuto -->
+          <div class="received">
+            <div class="msg-received flex-row">
+             <p>no</p>
+             <span class="option">
+               <i class="fas fa-chevron-down"></i>
+             </span>
+            </div>
+            <p class="ora-invio">13:00</p>
+          </div>
+        </div>
+        <div class="message-sfondo" data-contact='3'>
+          <div class="send">
+            <div class="msg-send flex-row">
+             <p>fumi?</p>
+             <span class="option">
+               <i class="fas fa-chevron-down"></i>
+             </span>
+            </div>
+            <p class="ora-invio">13:00</p>
+          </div>
+
+          <!-- messaggio ricevuto -->
+          <div class="received">
+            <div class="msg-received flex-row">
+             <p>no</p>
+             <span class="option">
+               <i class="fas fa-chevron-down"></i>
+             </span>
+            </div>
+            <p class="ora-invio">13:00</p>
+          </div>
+        </div>
+        <div class="message-sfondo" data-contact='4'>
+          <div class="send">
+            <div class="msg-send flex-row">
+             <p>hello</p>
+             <span class="option">
+               <i class="fas fa-chevron-down"></i>
+             </span>
+            </div>
+            <p class="ora-invio">13:00</p>
+          </div>
+
+          <!-- messaggio ricevuto -->
+          <div class="received">
+            <div class="msg-received flex-row">
+             <p>by</p>
+             <span class="option">
+               <i class="fas fa-chevron-down"></i>
+             </span>
+            </div>
+            <p class="ora-invio">13:00</p>
+          </div>
+        </div>
+        <div class="message-sfondo" data-contact='5'>
+          <div class="send">
+            <div class="msg-send flex-row">
+             <p>ti saluto</p>
+             <span class="option">
+               <i class="fas fa-chevron-down"></i>
+             </span>
+            </div>
+            <p class="ora-invio">13:00</p>
+          </div>
+
+          <!-- messaggio ricevuto -->
+          <div class="received">
+            <div class="msg-received flex-row">
+             <p>ciao</p>
+             <span class="option">
+               <i class="fas fa-chevron-down"></i>
+             </span>
+            </div>
+            <p class="ora-invio">13:00</p>
+          </div>
+        </div>
+        <div class="message-sfondo" data-contact='6'>
+          <div class="send">
+            <div class="msg-send flex-row">
+             <p>tutto ok</p>
+             <span class="option">
+               <i class="fas fa-chevron-down"></i>
+             </span>
+            </div>
+            <p class="ora-invio">13:00</p>
+          </div>
+
+          <!-- messaggio ricevuto -->
+          <div class="received">
+            <div class="msg-received flex-row">
+             <p>si</p>
+             <span class="option">
+               <i class="fas fa-chevron-down"></i>
+             </span>
+            </div>
+            <p class="ora-invio">13:00</p>
+          </div>
+        </div>
+        <div class="message-sfondo" data-contact='7'>
+          <div class="send">
+            <div class="msg-send flex-row">
+             <p>abiti in italia</p>
+             <span class="option">
+               <i class="fas fa-chevron-down"></i>
+             </span>
+            </div>
+            <p class="ora-invio">13:00</p>
+          </div>
+
+          <!-- messaggio ricevuto -->
+          <div class="received">
+            <div class="msg-received flex-row">
+             <p>no</p>
+             <span class="option">
+               <i class="fas fa-chevron-down"></i>
+             </span>
+            </div>
+            <p class="ora-invio">13:00</p>
+          </div>
+        </div>
+        <div class="message-sfondo" data-contact='8'>
+          <div class="send">
+            <div class="msg-send flex-row">
+             <p>sei di roma</p>
+             <span class="option">
+               <i class="fas fa-chevron-down"></i>
+             </span>
+            </div>
+            <p class="ora-invio">13:00</p>
+          </div>
+
+          <!-- messaggio ricevuto -->
+          <div class="received">
+            <div class="msg-received flex-row">
+             <p>no</p>
+             <span class="option">
+               <i class="fas fa-chevron-down"></i>
+             </span>
+            </div>
+            <p class="ora-invio">13:00</p>
+          </div>
+        </div>
+        <div class="message-sfondo" data-contact='9'>
+          <div class="send">
+            <div class="msg-send flex-row">
+             <p>parli inglese</p>
+             <span class="option">
+               <i class="fas fa-chevron-down"></i>
+             </span>
+            </div>
+            <p class="ora-invio">13:00</p>
+          </div>
+
+          <!-- messaggio ricevuto -->
+          <div class="received">
+            <div class="msg-received flex-row">
+             <p>poco</p>
+             <span class="option">
+               <i class="fas fa-chevron-down"></i>
+             </span>
+            </div>
+            <p class="ora-invio">13:00</p>
+          </div>
+        </div>
+
+      </section>
+
+          </div>
+
+
         <!-- footer -->
         <footer class="footer">
           <div class="box-invio flex-row">
@@ -237,8 +467,10 @@
         </div>
       </div>
 
-      </div>
+    </div>
 
+
+      </div>
 
         </div>
       </main>

@@ -71,7 +71,6 @@ i:hover, li:hover  {
   border-radius: 3px;
 }
 .lista-contatti {
-  height: 500px;
   background-color: #FFF;
   margin-right: 10px;
   overflow-y: auto;
@@ -267,4 +266,10 @@ i:hover, li:hover  {
 }
 .box-icon-search {
   padding: 10px;
+}
+.message-sfondo.active {
+  display: block;
+}
+.message-sfondo {
+  display: none;
 }
