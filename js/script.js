@@ -11,7 +11,7 @@ $(document).ready(
        }
      }
     );
-    // 2metodo 2milestone 
+    // 2metodo 2milestone
     $('.search-contatti').keyup(function () {
       var testoInserito = $('.search-contatti ').val().toLowerCase();
       $('li').each(function(){
@@ -45,7 +45,7 @@ function sendMessage(){
     $('.sfondo').append(newMessage);
     $('.testo-messaggio').val('');
     setTimeout(received,1000);
-    scroll();
+
   }
 }
 function addZero(number){
@@ -65,7 +65,7 @@ function received() {
   var minutes = addZero(data.getMinutes());
   var time = hours + ':' + minutes;
   newMessage.find('.ora-invio').text(time);
-  scroll();
+  
 }
 // 2 metodo milestone2
 // scrivendo qualcosa nell’input a sinistra, vengono visualizzati solo i contatti il cui nome contiene le lettere inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono solo Marco e Martina)
