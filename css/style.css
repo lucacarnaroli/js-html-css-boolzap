@@ -275,17 +275,14 @@ i:hover, li:hover  {
 .message-sfondo {
  display: none;
 }
-.menu-tendina-sx {
+.menu-tendina {
   height:70px;
   width: 120px;
   background-color: white;
   position: absolute;
 }
-.menu-tendina-dx {
-  height:70px;
-  width: 120px;
-  background-color: white;
-  position: absolute;
+.none {
+  display: none;
 }
 .voci-tendina li {
   list-style: none;

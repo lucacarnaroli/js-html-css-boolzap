@@ -81,8 +81,9 @@ $('.contatto').click(
   }
 );
 
-$(document).on('click', 'fa-chevron-down', function () {
-  $(this).parents().siblings('.menu-tendina').toggleClass('messsage-sfondo.active');
+$(document).on('click', '.fa-chevron-down', function () {
+  $(this).parents().siblings('.menu-tendina').toggleClass('none');
+  $(this).parents().siblings().find('.menu-tendina').addClass('none');
 }
 );
 
