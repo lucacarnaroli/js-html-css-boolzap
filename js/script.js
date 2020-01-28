@@ -31,7 +31,7 @@ $(document).ready(
  }
 );
 
-
+// invio messaggio
 function sendMessage(){
   var textMessage = $('.testo-messaggio').val();
   if (textMessage.length != 0) {
@@ -56,6 +56,7 @@ function addZero(number){
   return number;
 }
 // ad ogni inserimento di un messaggio, l’utente riceverà un “ok” come risposta, che apparirà dopo 1 secondo.
+// ricevi messaggio
 function received() {
   var newMessage = $('.template-received > .message-received').clone().addClass('received');
   newMessage.find('.message-text-received');
@@ -68,6 +69,7 @@ function received() {
   newMessage.find('.ora-invio').text(time);
 }
 
+// se clicco su un contatto, mi cambia anche l'header del nome
 $('.contatto').click(
   function() {
     var nomeContatto = $(this).find(".nome").text();
@@ -78,6 +80,16 @@ $('.contatto').click(
     conversazione.addClass('active');
   }
 );
+
+$(document).on('click', 'fa-chevron-down', function () {
+  $(this).parents().siblings('.menu-tendina').toggleClass('messsage-sfondo.active');
+}
+);
+
+
+
+
+
 
 // 2 metodo milestone2
 // scrivendo qualcosa nell’input a sinistra, vengono visualizzati solo i contatti il cui nome contiene le lettere inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono solo Marco e Martina)

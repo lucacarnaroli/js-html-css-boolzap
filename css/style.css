@@ -204,6 +204,7 @@ i:hover, li:hover  {
   float: right;
   clear: both;
   display: block;
+  position: relative;
 }
 .msg-send {
   justify-content: space-between;
@@ -221,6 +222,7 @@ i:hover, li:hover  {
   margin: 10px;
   float: left;
   clear: both;
+  position: relative;
 }
 .msg-received {
   justify-content: space-between;
@@ -271,5 +273,22 @@ i:hover, li:hover  {
   display: block;
 }
 .message-sfondo {
-  display: none;
+ display: none;
+}
+.menu-tendina-sx {
+  height:70px;
+  width: 120px;
+  background-color: white;
+  position: absolute;
+}
+.menu-tendina-dx {
+  height:70px;
+  width: 120px;
+  background-color: white;
+  position: absolute;
+}
+.voci-tendina li {
+  list-style: none;
+  font-size: 14px;
+  padding: 8px;
 }
