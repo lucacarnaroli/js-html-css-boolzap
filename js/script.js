@@ -90,7 +90,7 @@ $(document).on('click', '.fa-chevron-down', function() {
 $(document).on('click','.delete',function() {
   $(this).parents('.send').remove();
   $(this).parents('.received').remove();
-}
+ }
 );
 
 

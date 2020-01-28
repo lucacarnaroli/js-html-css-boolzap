@@ -190,7 +190,6 @@ i:hover, li:hover  {
   border-radius: 30px;
 }
 .message {
-  overflow: hidden;
   word-break: break-all;
   word-wrap: break-word;
 }
@@ -203,8 +202,7 @@ i:hover, li:hover  {
   margin: 10px;
   float: right;
   clear: both;
-  display: block;
-  /* position: relative; */
+  position: relative;
 }
 .msg-send {
   justify-content: space-between;
@@ -280,7 +278,7 @@ i:hover, li:hover  {
   width: 120px;
   background-color: white;
   position: absolute;
-  z-index: 1;  
+  z-index: 1;
 }
 .none {
   display: none;
