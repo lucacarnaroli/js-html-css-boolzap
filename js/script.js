@@ -46,7 +46,7 @@ function sendMessage(){
     $('.message-sfondo.active').append(newMessage);
     $('.testo-messaggio').val('');
     setTimeout(received,1000);
-
+    scrollMessage();
   }
 }
 function addZero(number){
@@ -67,6 +67,7 @@ function received() {
   var minutes = addZero(data.getMinutes());
   var time = hours + ':' + minutes;
   newMessage.find('.ora-invio').text(time);
+  scrollMessage();
 }
 
 // se clicco su un contatto, mi cambia anche l'header del nome
@@ -93,7 +94,10 @@ $(document).on('click','.delete',function() {
  }
 );
 
-
+function scrollMessage() {
+  var altezzaBox = $('.chat').height();
+  $('.sfondo').scrollTop(altezzaBox);
+}
 
 
 
