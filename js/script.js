@@ -81,9 +81,15 @@ $('.contatto').click(
   }
 );
 
-$(document).on('click', '.fa-chevron-down', function () {
+$(document).on('click', '.fa-chevron-down', function() {
   $(this).parents().siblings('.menu-tendina').toggleClass('none');
   $(this).parents().siblings().find('.menu-tendina').addClass('none');
+ }
+);
+
+$(document).on('click','.delete',function() {
+  $(this).parents('.send').remove();
+  $(this).parents('.received').remove();
 }
 );
 
