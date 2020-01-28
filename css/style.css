@@ -204,7 +204,7 @@ i:hover, li:hover  {
   float: right;
   clear: both;
   display: block;
-  position: relative;
+  /* position: relative; */
 }
 .msg-send {
   justify-content: space-between;
@@ -280,6 +280,7 @@ i:hover, li:hover  {
   width: 120px;
   background-color: white;
   position: absolute;
+  z-index: 1;  
 }
 .none {
   display: none;
