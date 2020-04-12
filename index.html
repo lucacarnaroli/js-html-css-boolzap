@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://lucacarnaroli.github.io/js-html-css-boolzap/img/whatsapp.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -17,7 +18,7 @@
 
         <div class="contatti flex-column">
           <div class="profilo flex-row">
-            <div class="foto-profilo"></div>
+            <img class="foto-profilo" src="img/winchester.gif" alt="">
             <div class="icon-profilo">
             <i class="fas fa-circle-notch"></i>
             <i class="fas fa-comment-alt"></i>
@@ -25,7 +26,7 @@
             </div>
           </div>
           <div class="notifiche flex-row">
-            <div class="foto-profilo"></div>
+            <img class="foto-profilo" src="img/plus.jpg" alt="">
             <div class="flex-column">
              <h5>Ricevi notifiche di nuovi messaggi</h5>
              <h5><a  class="attiva-notifiche" href="">Attiva notifiche desktop</a></h5>
@@ -41,10 +42,10 @@
           </div>
           <ul class="lista-contatti">
             <li class='contatto' data-contact='0'>
-              <div class="foto-profilo"></div>
+              <img class="foto-profilo" src="img/bart.jpg" alt="">
               <div class="box flex-column">
                 <div class="nome-ora flex-row">
-                  <h4 class="nome">Marco</h4>
+                  <h4 class="nome">Bart</h4>
                   <small>10:00</small>
                 </div>
                 <div class="digitando">
@@ -53,10 +54,10 @@
               </div>
             </li>
             <li class='contatto' data-contact='1'>
-              <div class="foto-profilo"></div>
+              <img class="foto-profilo" src="img/homer-simpson.jpg" alt="">
               <div class="box flex-column">
                 <div class="nome-ora flex-row">
-                  <h4 class="nome">Luca</h4>
+                  <h4 class="nome">Homer</h4>
                   <small>10:00</small>
                 </div>
                 <div class="digitando">
@@ -65,10 +66,10 @@
               </div>
             </li>
             <li class='contatto'data-contact='2'>
-              <div class="foto-profilo"></div>
+              <img class="foto-profilo" src="img/lisa-simpson.jpg" alt="">
               <div class="box flex-column">
                 <div class="nome-ora flex-row">
-                  <h4 class="nome">Catia</h4>
+                  <h4 class="nome">Lisa</h4>
                   <small>10:00</small>
                 </div>
                 <div class="digitando">
@@ -77,10 +78,10 @@
               </div>
             </li>
             <li class='contatto'data-contact='3'>
-              <div class="foto-profilo"></div>
+              <img class="foto-profilo" src="img/maggie_simpson.jpg" alt="">
               <div class="box flex-column">
                 <div class="nome-ora flex-row">
-                  <h4 class="nome">Alberto</h4>
+                  <h4 class="nome">Marge</h4>
                   <small>10:00</small>
                 </div>
                 <div class="digitando">
@@ -89,10 +90,10 @@
               </div>
             </li>
             <li class='contatto'data-contact='4'>
-              <div class="foto-profilo"></div>
+              <img class="foto-profilo" src="img/Telespalla_bob56.jpg" alt="">
               <div class="box flex-column">
                 <div class="nome-ora flex-row">
-                  <h4 class="nome">Giulia</h4>
+                  <h4 class="nome">Bob</h4>
                   <small>10:00</small>
                 </div>
                 <div class="digitando">
@@ -107,11 +108,14 @@
         <div class="chat">
           <div class="accesso ">
             <div class="header-accesso flex-row">
-              <div class="foto-profilo">
-              <div class="nome-utente flex-column">
-               <h4>Marco</h4>
-               <p>Ulimo accesso ...</p>
-              </div>
+              <div class="flex">
+                <div class="foto-profilo">
+                  <!-- <img class="foto-profilo s" src="img/bart.jpg" alt=""> -->
+                  <div class="nome-utente flex-column">
+                    <h4>Bart</h4>
+                    <p>Ultimo accesso ...</p>
+                  </div>
+                </div>
               </div>
             <div class="icon-accesso">
               <i class="fas fa-search"></i>
